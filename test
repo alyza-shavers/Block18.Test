@@ -1,0 +1,30 @@
+Functional Tests-
+
+Empty cart checkout:
+- Given an empty shopping cart, when a guest tries to checkout, a message should be shown stating that the cart is empty and prompt the guest to add items to the cart.
+- Givem an empty shopping cart, when a logged-in user tries to checkout, a message should be shown stating that the cart is empty and recommend the user add certain poducts to the cart like previously bought items or explore similar products based on shopping history. 
+
+Checking out as a Guest:
+- Given items are in the cart, when a guest chooses to check out, it will ask for the guest to select substitutions in case any items are out of stock and require the guest to provide information such as shipping address, contact information and payment informaton. 
+- Given all required information is provided during the checkout process, guest will confirm order, a confirmation message will appear, with an order ID number, and a message stating that a confirmation email has been sent to the email provivded.
+- Guest will also be asked if they would like to create an account to save time for use in the future. Guest may accept or decline. 
+-If guest decides to create an acount for future use, they will be prompted to create a password.
+-Given the password meets the requirements the account wil be created successfully. 
+
+Checking out as a Logged-in User:
+- Given items are in the cart, when a logged-in user chooses to check out, it will ask for the user to select substitutions in case any items are out of stock and proceed to page for user to select a previous used address and payment information or to enter new information.
+-Given all selections have been made user will confirm order, a confirmation message will appear, with an order ID number, and a message stating that a confirmation email has been sent to the email address on file. 
+
+User Login Prompt:
+- If a guest is checkiong out and decides to log in, it should prompt the user to enter login credentials like email and password.
+- Given the email or password entered is incorrect an error meassage will appear
+- Once the correct information is enetered it will redirect the user to continue the checkout process.
+
+User Experience:
+- During each step of the checkout process, it should clearly show which step the guest/user is on, display the items in the cart, show the total cost, and provide options to edit or remove items and add substitutions.
+
+Behavior Considerations:
+- Smooth guest and logged-in user checkout options
+- Proper error handling in case of network failures, errors, or out of stock items
+- A clear and intuitive user interface for simple shopping
+-Proper security measures to proper customer information and payment informations
